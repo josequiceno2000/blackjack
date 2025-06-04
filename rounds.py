@@ -1,4 +1,5 @@
 import random
+from typing import List
 
 def play_round():
     # Create a card array ✔
@@ -8,4 +9,9 @@ def play_round():
     computer_cards = []
 
     # Choose a random card ✔
-    return random.choice(possible_cards)
+    # Choose 2 random cards for player ✔
+    
+    for i in range(2):
+        player_cards.append(random.choice(possible_cards))
+    
+    return player_cards
