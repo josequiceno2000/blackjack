@@ -10,8 +10,11 @@ def play_round():
 
     # Choose a random card ✔
     # Choose 2 random cards for player ✔
-    
+    # Choose 1 random card for computer 
+
     for i in range(2):
         player_cards.append(random.choice(possible_cards))
+        
+    computer_cards.append(random.choice(possible_cards))
     
-    return player_cards
+    return (player_cards, computer_cards)
