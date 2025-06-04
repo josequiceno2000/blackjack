@@ -1,10 +1,8 @@
-from intro import play_blackjack
+from intro import play_blackjack, title_card
 
 def main():
     if play_blackjack():
-        print("Let's play!")
-    else:
-        print("BOOO")
+        title_card()
 
 if __name__ == "__main__":
     main()
