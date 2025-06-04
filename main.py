@@ -1,7 +1,10 @@
-from intro import intro
+from intro import play_blackjack
 
 def main():
-    intro()
+    if play_blackjack():
+        print("Let's play!")
+    else:
+        print("BOOO")
 
 if __name__ == "__main__":
     main()
