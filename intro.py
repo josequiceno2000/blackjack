@@ -1,5 +1,6 @@
 
 def play_blackjack():
+    print("\n" * 2)
     return input("Do you want to play a game of Blackjack? Type 'y' or 'n':\n> ").lower() == "y"
 
 def title_card():
